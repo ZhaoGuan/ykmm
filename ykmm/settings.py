@@ -69,10 +69,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
-DOWNLOADER_MIDDLEWARES = {
-    # 随机UserAgent
-    'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None
-}
+# 等待间隔时间
+DOWNLOAD_DELAY = 30
+RANDOMIZE_DOWNLOAD_DELAY = True
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'
+COOKIES_ENABLED = True
+
 # AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 # AUTOTHROTTLE_START_DELAY = 5

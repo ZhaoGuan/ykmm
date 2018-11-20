@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 # __author__ = 'Gz'
-# -*- coding:utf-8 -*-
 
 import logging
 import random
